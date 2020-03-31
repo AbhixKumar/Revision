@@ -1,0 +1,4 @@
+﻿CREATE TABLE [dbo].[tblOrders]
+(
+	[Id] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY
+)

@@ -1,0 +1,4 @@
+﻿CREATE TABLE [dbo].[tblCrust]
+(
+	[CrustId] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY
+)

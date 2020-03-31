@@ -1,0 +1,24 @@
+﻿@model PizzaBox.Client.Models.PizzaViewModel
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>@Model.Size.Name</h1>
+<h1>@Model.Crust.Name</h1>
+
+<ul>
+    @foreach (var tp in Model.Toppings)
+    {
+       <li>@tp.Name</li>
+       <li>@tp.Price</li>
+    }
+    
+    @Html.DropDownList("PizzaType")
+     <p>
+       <input type="submit" value="submit" />
+     </p>
+  
+</ul>
+
+
