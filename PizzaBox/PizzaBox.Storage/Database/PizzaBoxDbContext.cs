@@ -17,7 +17,7 @@ namespace PizzaBox.Storage.Database
         public DbSet<User> User { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder builder)
         {
-            builder.UseSqlServer("server=localhost;database=PizzaBoxDb;user id=sa;password=Password12345");
+            builder.UseSqlServer("server=akumardata.database.windows.net;database=AKdata;user id=akumardb;password=Notest123!");
         }
 
         protected override void OnModelCreating(ModelBuilder builder)

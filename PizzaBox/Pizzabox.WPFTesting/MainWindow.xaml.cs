@@ -32,6 +32,19 @@ namespace Pizzabox.WPFTesting
             
             var add = pz.GetPizzas();
             lstCombo.Items.Add(add);
+
+            CrustRepository cz = new CrustRepository();
+            int tryid = 5;
+            var addc = cz.GetACrust(tryid);
+
+            txtTest.Text = addc.Name;
+
+
+        }
+
+        private void txtTest_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }
