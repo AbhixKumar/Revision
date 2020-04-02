@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using PizzaBox.Domain.Models;
 using PizzaBox.Storage.Repositories;
 
 namespace Pizzabox.WPFTesting
@@ -29,17 +30,13 @@ namespace Pizzabox.WPFTesting
         private void btnCheck_Click(object sender, RoutedEventArgs e)
         {
             PizzaRepository pz = new PizzaRepository();
-            
-            var add = pz.GetPizzas();
-            lstCombo.Items.Add(add);
-
+            //Pizza pizza = new Pizza();    
             CrustRepository cz = new CrustRepository();
-            int tryid = 5;
-            var addc = cz.GetACrust(tryid);
 
-            txtTest.Text = addc.Name;
-
-
+            foreach(Crust pizza in cz.GetCrusts())
+            {
+                lstCombo.Items.Add(pizza.Name);
+            }
         }
 
         private void txtTest_TextChanged(object sender, TextChangedEventArgs e)

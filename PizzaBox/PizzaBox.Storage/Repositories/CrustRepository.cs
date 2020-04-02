@@ -11,6 +11,10 @@ namespace PizzaBox.Storage.Repositories
     {
         private static readonly PizzaBoxDbContext _db = new PizzaBoxDbContext();
 
+        public List<Crust> GetCrusts()
+        {
+            return _db.Crust.ToList();
+        }
         public Crust GetACrust(long id)
         {
             return _db.Crust.FirstOrDefault(c => c.CrustId == id);

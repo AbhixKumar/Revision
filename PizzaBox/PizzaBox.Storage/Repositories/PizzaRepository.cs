@@ -22,5 +22,11 @@ namespace PizzaBox.Storage.Repositories
         {
             return _db.Pizza.FirstOrDefault(p => p.PizzaId == id);
         }
-   }
+
+        public bool Post(Pizza pizza)
+        {
+            _db.Pizza.Add(pizza);           
+            return _db.SaveChanges() == 1;
+        }
+    }
 }
