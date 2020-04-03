@@ -7,9 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ComboBox x:Name="lstCombo" HorizontalAlignment="Left" Margin="85,69,0,0" VerticalAlignment="Top" Width="625" Height="35"/>
+        <ComboBox x:Name="lstCombo" HorizontalAlignment="Left" Margin="85,69,0,0" VerticalAlignment="Top" Width="625" Height="35" Loaded="lstCombo_Loaded"/>
         <Button x:Name="btnCheck" Content="Button" HorizontalAlignment="Left" Margin="130,279,0,0" VerticalAlignment="Top" Width="95" Height="40" Click="btnCheck_Click"/>
-        <TextBox x:Name="txtTest" HorizontalAlignment="Left" Margin="95,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" Height="30" />
+        <ComboBox x:Name="lstCrust" HorizontalAlignment="Left" Margin="85,134,0,0" VerticalAlignment="Top" Width="625" Height="35" SelectionChanged="lstCrust_SelectionChanged"/>
 
     </Grid>
 </Window>

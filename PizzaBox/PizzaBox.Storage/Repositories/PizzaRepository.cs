@@ -28,5 +28,7 @@ namespace PizzaBox.Storage.Repositories
             _db.Pizza.Add(pizza);           
             return _db.SaveChanges() == 1;
         }
+
+      
     }
 }

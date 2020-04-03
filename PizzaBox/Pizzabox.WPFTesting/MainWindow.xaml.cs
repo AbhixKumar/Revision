@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 using PizzaBox.Domain.Models;
 using PizzaBox.Storage.Repositories;
 
+
 namespace Pizzabox.WPFTesting
 {
     /// <summary>
@@ -25,21 +26,43 @@ namespace Pizzabox.WPFTesting
         public MainWindow()
         {
             InitializeComponent();
+            LoadAll();
         }
 
         private void btnCheck_Click(object sender, RoutedEventArgs e)
         {
-            PizzaRepository pz = new PizzaRepository();
-            //Pizza pizza = new Pizza();    
-            CrustRepository cz = new CrustRepository();
-
-            foreach(Crust pizza in cz.GetCrusts())
-            {
-                lstCombo.Items.Add(pizza.Name);
-            }
+            
+                     
         }
 
         private void txtTest_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void lstCombo_Loaded(object sender, RoutedEventArgs e)
+        {
+         
+        }
+
+        public void LoadAll()
+        {
+            PizzaRepository pz = new PizzaRepository();
+            SizeRepository sz = new SizeRepository();
+            CrustRepository cz = new CrustRepository();
+                      
+                foreach (var size in sz.GetAllSizes())
+                {
+                    lstCombo.Items.Add(size.Name);                   
+                }  
+
+                foreach (var crust in cz.GetCrusts())
+                {
+                  lstCrust.Items.Add(crust.Name);
+                }         
+        }
+
+        private void lstCrust_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }
