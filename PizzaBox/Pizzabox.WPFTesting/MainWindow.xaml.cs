@@ -31,8 +31,10 @@ namespace Pizzabox.WPFTesting
 
         private void btnCheck_Click(object sender, RoutedEventArgs e)
         {
-            
-                     
+            if (rdoLocationOne.IsChecked != null)
+            {
+                
+            }            
         }
 
         private void txtTest_TextChanged(object sender, TextChangedEventArgs e)
@@ -62,7 +64,18 @@ namespace Pizzabox.WPFTesting
                 }         
         }
 
+        public void LoadRadiobtns()
+        {
+            StoreRepository stz = new StoreRepository();
+
+            
+        }
         private void lstCrust_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void rdoLocationOne_Checked(object sender, RoutedEventArgs e)
         {
 
         }

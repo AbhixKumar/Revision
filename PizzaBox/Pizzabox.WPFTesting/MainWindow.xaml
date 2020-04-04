@@ -7,9 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ComboBox x:Name="lstCombo" HorizontalAlignment="Left" Margin="85,69,0,0" VerticalAlignment="Top" Width="625" Height="35" Loaded="lstCombo_Loaded"/>
-        <Button x:Name="btnCheck" Content="Button" HorizontalAlignment="Left" Margin="130,279,0,0" VerticalAlignment="Top" Width="95" Height="40" Click="btnCheck_Click"/>
-        <ComboBox x:Name="lstCrust" HorizontalAlignment="Left" Margin="85,134,0,0" VerticalAlignment="Top" Width="625" Height="35" SelectionChanged="lstCrust_SelectionChanged"/>
+        <ComboBox x:Name="lstCombo" HorizontalAlignment="Left" Margin="70,259,0,0" VerticalAlignment="Top" Width="625" Height="35" Loaded="lstCombo_Loaded"/>
+        <Button x:Name="btnCheck" Content="Button" HorizontalAlignment="Left" Margin="70,374,0,0" VerticalAlignment="Top" Width="95" Height="40" Click="btnCheck_Click"/>
+        <ComboBox x:Name="lstCrust" HorizontalAlignment="Left" Margin="70,314,0,0" VerticalAlignment="Top" Width="625" Height="35" SelectionChanged="lstCrust_SelectionChanged"/>
+        <RadioButton x:Name="rdoLocationOne" Content="Location 1" HorizontalAlignment="Left" Margin="70,107,0,301" RenderTransformOrigin="0.224,-1.134" Width="130" Checked="rdoLocationOne_Checked"/>
+        <RadioButton x:Name="rdoLocationtwo" Content="Location 2" HorizontalAlignment="Left" Margin="305,94,0,0" VerticalAlignment="Top" Height="26" RenderTransformOrigin="0.495,0.193" Width="130"/>
 
     </Grid>
 </Window>

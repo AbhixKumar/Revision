@@ -13,9 +13,11 @@ namespace PizzaBox.Domain.Models
         public List<PizzaOrder> PizzaOrders { get; set; }
         public decimal Price { get; set; }
         
-        public Pizza()
+        public Pizza(Crust _crust,Size _size, List<PizzaTopping> _pizzatopping)
         {
-
+            crust = _crust;
+            size = _size;
+            PizzaTopping = _pizzatopping;
         }
 
     }

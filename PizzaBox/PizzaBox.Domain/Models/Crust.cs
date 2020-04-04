@@ -11,9 +11,9 @@ namespace PizzaBox.Domain.Models
         public string Name { get; set; }
         public decimal Price { get; set; }
         public List<Pizza> Pizzas { get; set; }
-        public Crust()
+        public Crust(List<Pizza> _pizzas)
         {
-            
+            Pizzas = _pizzas;
         }
       
     }
