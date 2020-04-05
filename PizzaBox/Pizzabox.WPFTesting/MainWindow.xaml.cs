@@ -27,21 +27,18 @@ namespace Pizzabox.WPFTesting
         {
             InitializeComponent();
             LoadAll();
+            LoadStore();
         }
 
         private void btnCheck_Click(object sender, RoutedEventArgs e)
         {
-            if (rdoLocationOne.IsChecked != null)
-            {
-                
-            }            
+            StoreRepository stz = new StoreRepository();
+            Store store1 = new Store();
+            string mess1 = store1.StoreLocation;
+
+            txtLocation.Text = stz.GetStoreName(mess1).ToString();
         }
-
-        private void txtTest_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
+     
         private void lstCombo_Loaded(object sender, RoutedEventArgs e)
         {
          
@@ -53,31 +50,26 @@ namespace Pizzabox.WPFTesting
             SizeRepository sz = new SizeRepository();
             CrustRepository cz = new CrustRepository();
                       
-                foreach (var size in sz.GetAllSizes())
-                {
-                    lstCombo.Items.Add(size.Name);                   
-                }  
+            foreach (var size in sz.GetAllSizes())
+            {
+                lstCombo.Items.Add(size.Name);                   
+            }  
 
-                foreach (var crust in cz.GetCrusts())
-                {
-                  lstCrust.Items.Add(crust.Name);
-                }         
+            foreach (var crust in cz.GetCrusts())
+            {
+                lstCrust.Items.Add(crust.Name);
+            }         
         }
 
-        public void LoadRadiobtns()
+        public void LoadStore()
         {
-            StoreRepository stz = new StoreRepository();
 
-            
         }
         private void lstCrust_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }
 
-        private void rdoLocationOne_Checked(object sender, RoutedEventArgs e)
-        {
-
-        }
+      
     }
 }

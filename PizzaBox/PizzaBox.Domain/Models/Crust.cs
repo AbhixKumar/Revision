@@ -15,6 +15,11 @@ namespace PizzaBox.Domain.Models
         {
             Pizzas = _pizzas;
         }
+
+        public Crust()
+        {
+
+        }
       
     }
    

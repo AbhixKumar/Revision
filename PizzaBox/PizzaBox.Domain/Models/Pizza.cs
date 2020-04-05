@@ -20,5 +20,10 @@ namespace PizzaBox.Domain.Models
             PizzaTopping = _pizzatopping;
         }
 
+        public Pizza()
+        {
+
+        }
+
     }
 }

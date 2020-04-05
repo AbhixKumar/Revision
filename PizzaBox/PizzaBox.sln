@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PizzaBox.Storage", "PizzaBo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PizzaBox.Testing", "PizzaBox.Testing\PizzaBox.Testing.csproj", "{AA65E41A-9FAF-4B48-B19F-39259F03AB33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pizzabox.WPFTesting", "Pizzabox.WPFTesting\Pizzabox.WPFTesting.csproj", "{14C113FA-DB7E-44BD-8ADE-006D3429BB2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pizzabox.WPFTesting", "Pizzabox.WPFTesting\Pizzabox.WPFTesting.csproj", "{14C113FA-DB7E-44BD-8ADE-006D3429BB2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaBox.xUnitTest", "PizzaBox.xUnitTest\PizzaBox.xUnitTest.csproj", "{58E57375-8459-49E2-A476-DFCB2813BD51}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{14C113FA-DB7E-44BD-8ADE-006D3429BB2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14C113FA-DB7E-44BD-8ADE-006D3429BB2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14C113FA-DB7E-44BD-8ADE-006D3429BB2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58E57375-8459-49E2-A476-DFCB2813BD51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58E57375-8459-49E2-A476-DFCB2813BD51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58E57375-8459-49E2-A476-DFCB2813BD51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58E57375-8459-49E2-A476-DFCB2813BD51}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

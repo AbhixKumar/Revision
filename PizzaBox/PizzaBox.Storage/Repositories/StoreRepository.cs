@@ -16,9 +16,11 @@ namespace PizzaBox.Storage.Repositories
             return _db.Store.ToList();
         }
 
-        public Store GetAStore(long id)
+        public Store GetStoreName(string name)
         {
-            return _db.Store.FirstOrDefault(s => s.StoreId == id);
+            return _db.Store.SingleOrDefault(s => s.StoreLocation == name);
         }
+
+       
     }
 }
