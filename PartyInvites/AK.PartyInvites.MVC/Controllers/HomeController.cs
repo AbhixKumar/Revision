@@ -1,0 +1,27 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using AK.PartyInvites.MVC.Models;
+
+namespace AK.PartyInvites.MVC.Controllers
+{
+    public class HomeController : Controller
+    {
+        private readonly ILogger<HomeController> _logger;
+
+        public HomeController(ILogger<HomeController> logger)
+        {
+            _logger = logger;
+        }
+
+        public string Index()
+        {
+            return "Ello worl'd";
+        }
+
+    }
+}

@@ -5,9 +5,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using PizzaBox.Client.Models;
+using AK.MovieStore.MVC.Models;
 
-namespace PizzaBox.Client.Controllers
+namespace AK.MovieStore.MVC.Controllers
 {
     public class HomeController : Controller
     {
@@ -18,12 +18,10 @@ namespace PizzaBox.Client.Controllers
             _logger = logger;
         }
 
-        public ActionResult Index()
+        public IActionResult Index()
         {
-            ViewBag.Message = "I want to do programming";
             return View();
         }
-
 
         public IActionResult Privacy()
         {
