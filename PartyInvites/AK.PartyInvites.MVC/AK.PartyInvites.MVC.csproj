@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AK.PartyInvites.BL\AK.PartyInvites.BL.csproj" />
+    <ProjectReference Include="..\AK.PartyInvites.Storage\AK.PartyInvites.Storage.csproj" />
   </ItemGroup>
 
 </Project>

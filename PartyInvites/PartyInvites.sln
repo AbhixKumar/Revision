@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29926.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AK.PartyInvites.MVC", "AK.PartyInvites.MVC\AK.PartyInvites.MVC.csproj", "{5BD7F050-DC19-414A-8A91-0A14D0534BC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AK.PartyInvites.MVC", "AK.PartyInvites.MVC\AK.PartyInvites.MVC.csproj", "{5BD7F050-DC19-414A-8A91-0A14D0534BC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AK.PartyInvites.BL", "AK.PartyInvites.BL\AK.PartyInvites.BL.csproj", "{2EFDADA1-1748-4543-A552-B3DDD76AD8D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AK.PartyInvites.BL", "AK.PartyInvites.BL\AK.PartyInvites.BL.csproj", "{2EFDADA1-1748-4543-A552-B3DDD76AD8D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AK.PartyInvites.Storage", "AK.PartyInvites.Storage\AK.PartyInvites.Storage.csproj", "{B91EC468-F39F-43CE-926E-214E5AEF2BE2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{2EFDADA1-1748-4543-A552-B3DDD76AD8D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2EFDADA1-1748-4543-A552-B3DDD76AD8D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2EFDADA1-1748-4543-A552-B3DDD76AD8D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B91EC468-F39F-43CE-926E-214E5AEF2BE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B91EC468-F39F-43CE-926E-214E5AEF2BE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B91EC468-F39F-43CE-926E-214E5AEF2BE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B91EC468-F39F-43CE-926E-214E5AEF2BE2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

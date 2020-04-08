@@ -1,0 +1,33 @@
+﻿@model AK.PartyInvites.BL.Guest
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Thanks</title>
+</head>
+<body>
+    <p>
+       <h2>Greetings, @Model.Name!</h2>
+    @if (Model.WillAttend == true)
+    {
+        @: You're coming, Excellant! We're gonna partaayy!
+    }
+    else if(Model.WillAttend == null)
+    {
+        @:Please enter a value
+    }
+     else{
+        @:Sorry to hear that you can't make it.
+    }
+    </p>
+    <p>Click <a asp-action="ListResponses">here</a> to see who is coming.</p>
+</body>
+</html>
+
+
