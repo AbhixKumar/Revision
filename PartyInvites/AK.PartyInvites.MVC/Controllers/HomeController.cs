@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using AK.PartyInvites.MVC.Models;
+using AK.PartyInvites.BL;
 
 namespace AK.PartyInvites.MVC.Controllers
 {
@@ -18,9 +19,21 @@ namespace AK.PartyInvites.MVC.Controllers
             _logger = logger;
         }
 
-        public string Index()
+        //public ViewResult Index()
+        //{
+        //    int hour = DateTime.Now.Hour;
+        //    ViewBag.Rando = hour < 12 ? "Morning" : "Afternoon";
+        //    return View("TheView");
+        //}
+
+        //public ViewResult RsvpForm()
+        //{
+        //    return View();
+        //}
+
+        public ViewResult Index()
         {
-            return "Ello worl'd";
+            return View();
         }
 
     }
