@@ -36,9 +36,16 @@ namespace AK.PartyInvites.MVC.Controllers
         [HttpPost]
         public ViewResult RsvpForm(Guest guest)
         {
-            //TODO: store response from guest
-            GuestRepository.AddResponse(guest);
-            return View("Greetings", guest);
+            if (ModelState.IsValid)
+            {
+                //TODO: store response from guest
+                GuestRepository.AddResponse(guest);
+                return View("Greetings", guest);
+            }
+            else
+            {
+                return View();
+            }
         }
         
         public ViewResult ListResponses()

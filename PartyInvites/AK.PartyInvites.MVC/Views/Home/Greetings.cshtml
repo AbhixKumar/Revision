@@ -10,24 +10,28 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Thanks</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
 </head>
-<body>
+<body class="text-center">
     <p>
-       <h2>Greetings, @Model.Name!</h2>
-    @if (Model.WillAttend == true)
-    {
-        @: You're coming, Excellant! We're gonna partaayy!
-    }
-    else if(Model.WillAttend == null)
-    {
-        @:Please enter a value
-    }
-     else{
-        @:Sorry to hear that you can't make it.
-    }
+        <h2>Greetings, @Model.Name!</h2>
+        @if (Model.WillAttend == true)
+        {
+            @: You're coming, Excellant! We're gonna partaayy!
+        }
+        else if (Model.WillAttend == null)
+        {
+            @:Please enter a value
+        }
+        else
+        {
+            @:Sorry to hear that you can't make it.
+        }
     </p>
-    <p>Click <a asp-action="ListResponses">here</a> to see who is coming.</p>
-</body>
+   
+        Click <a class="nav-link" asp-action="ListResponses">here</a> 
+        to see who is coming.
+    </body>
 </html>
 
 
